@@ -69,6 +69,12 @@ public class Stocks
 
   class Find
   {
+    /*
+     *  Checks the input array to see if the input String is there.
+     *  @param brandname The input string
+     *  @param brandsArray The input array of string values
+     *  @return ? value : Not Found
+     */
     public static String
     findBrandByName (String brandname, String[] brandsArray)
     {
@@ -85,6 +91,10 @@ public class Stocks
 
   class Sort
   {
+    /*  Sort an array by ascending
+     *  @param brandsArray The input array of string values
+     *  @return - same array, but sorted
+     */
     public static String[] sortBrandByName (String[] brandsArray)
     {
       //  Sorted the array via Arrays.sort
@@ -99,20 +109,15 @@ public class Stocks
       return sorted;
     }
   }
-  /*
-   *  Creates an element from the input array if it matches the specified String
-   *  @param deleteThisBrand - The string value to be removed from the input
-   * array
-   *  @param brandsArray  - The input array of string values
-   *  @return - A new string array with the specified value removed, or the
-   * original array if the value is not found
-   *
-   */
   class Create
   {
-    /*
-     *  Duplicates the old Array and increment once the index to put
-     */
+  /*
+   *  Creates an element from the input array and add it to the new Array
+   *  @param brandName - The string value to be added from the input to the updated array
+   *  @param brandsArray  - The input array of string values
+   *  @return - A new string array that includes input string.
+   *
+   */
     public static String[] insertBrandByName (String brandName,
                                               String[] brandsArray)
     {
